@@ -1,0 +1,144 @@
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+
+body {
+  background-color: black;
+  background: url(https://pixabay.com/static/uploads/photo/2014/11/27/18/36/tent-548022_960_720.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* making  navbar transparent */
+.navbar-default {
+    background-color: black;
+    border-color: #e7e7e7;
+}
+/* changing brand color to White */
+.navbar-default .navbar-brand {
+    color: yellow;
+}
+/* changing links to white */
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+}
+
+/* changing active color */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+
+/* drop down menu color */
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #FFF;
+    background-color: black;
+}
+
+
+/* info */
+#info {
+  color: yellow;
+  margin-top: 20%;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive, bold;
+}
+
+/* sign up log in */
+.mainInfo{
+  color: white;
+  text-align: center;
+}
+
+/* header */
+.header{
+  color: yellow;
+  text-align: center;
+}
+
+
+/* ? for info */
+#box{
+  color: white;
+  font-size: 70px;
+}
+/* Header  that appears after info is gone */
+#header {
+   color: white;
+   text-align: center;
+   font-size: 50px;
+
+   background-color: rgba(255,255,255);
+   font-family: cursive, bold;
+}
+/* 2 box that appears after info is gone */
+#box3 {
+   color: white;
+   text-align: center;
+   background-color: black;
+   font-family: cursive, bold;
+}
+
+#box3 ul li {
+  font-size: 30px;
+  color: white;
+  font-family: cursive,bold;
+  padding-top: 2%;
+}
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+/* box2 brand name */
+#yellow {
+  color: yellow;
+}
+ /* sign up log in button */
+.signUp .logIn{
+  display:inline-block;
+}
+/* space between main info and buttons */
+.mainInfoText{
+  margin-bottom: 5%;
+}
+/* changing button colors sign up log in */
+.btn-default {
+    color: #FFF;
+    background-color: #000;
+    border-color: #FFF;
+}
+/* changign color of active buttons*/
+.btn-default:active {
+    background-color: white;
+    color: black;
+}
+
+/* modal text */
+.modalText{
+  color: black;
+}
+
+/* modal header*/
+.modal-header{
+  color: black;
+}
+.modal-dialog {
+    width: 80%;
+    height: 80%;
+    padding: 0;
+    margin: 0 auto;
+}
+.modal-content {
+    height: 80%;
+    height: auto;
+    border-radius: 0;
+}

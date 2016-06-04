@@ -1,0 +1,120 @@
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: black;
+}
+
+/* making  navbar transparent */
+.navbar-default {
+    background-color: black;
+    border-color: #e7e7e7;
+}
+/* changing brand color to White */
+.navbar-default .navbar-brand {
+    color: yellow;
+}
+/* changing links to white */
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+}
+
+/* changing active color */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+
+/* drop down menu color */
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #FFF;
+    background-color: black;
+}
+
+/* changing container color to black */
+.mainContainer{
+  background-color: black;
+  color: white;
+}
+
+.mainInfo{
+  color: white;
+}
+/* wrapper for listing */
+.containerdiv {
+  border: 0;
+  margin: 0 auto;
+  position: relative;
+} 
+/* listing profile image */
+.profileImage {
+  position: absolute; 
+  bottom: 1.2%;
+  left: 1%;
+  height: 100px;
+  border-radius: 50%;
+ }
+/* land listing img */
+ .land{
+  height: 300px;
+  width: 100%;
+  border: 2px solid white;
+  border-bottom: none;
+ }
+
+ /* land info */
+ .landInfo{
+  position: absolute; 
+  bottom: 1%;
+  right: 1%;
+  text-align: center;
+ }
+
+ /* listing profile info */
+ .listingProfileInfo{
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  text-align: center;
+  color: black;
+}
+
+/* changing ingo background color */
+
+.listingProfileInfo h3{
+  background-color: white;
+  margin-top: 4px;
+}
+
+/*removing row space */
+.row{
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+/* massage button */
+.message{
+  background-color: black;
+  color: black;
+}
+
+/* post button */
+.postButton{
+  background-color: black;
+  color: white;
+}
+/* message button */
+.btn{
+  background: none;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* changing container color to black */
+.postContainer{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+}

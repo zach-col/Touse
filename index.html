@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Touse Home</title>
+
+  <!-- Bootstrap cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  
+  <script>
+function flicker(count, callback, current) {
+    current = current || 0;
+   $(document).ready(function () {
+        $('.main').hide();
+    });
+    $("#box")[current % 2 == 0 ? 'hide' : 'show']();
+    
+    setTimeout(function(){
+        if (count * 2 <= current) {
+            callback();
+            return;
+        }
+        flicker(count, callback, current + 1)
+    }, 2000);
+}
+
+setTimeout(function () {
+    flicker(1, function () {
+        $(".main").fadeIn("slow");
+        $("#info").hide("slow");
+    })
+}, 200)
+  </script> 
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Touse</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="inspiredBy.html">Inspired By</a></li>
+            <li><a href="listings.html">Listing's</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+              <ul class="dropdown-menu scrollable-menu">
+                <li><a href="profile.html">Profile</a></li>
+              </ul>
+            </li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div> <!-- end of container -->
+    </nav>
+    <!-- info --> 
+    <div class="container">
+      <h1 id="info">Get paid to help others<span id="box">?</span></h1>
+    </div>
+      <!-- sign up log in -->
+      <!-- 2 info -->
+    <div class="container main">
+        <div class="mainInfo">
+            <!-- title -->
+          <h1 class="header">Touse</h1>
+            <!-- main info -->
+          <h2 class="mainInfoText">Changing lives for the better of Austin</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#signUp">Sign Up</button>
+
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#logIn">Log In</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="signUp" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Sign up form</h2>
+                  </div>
+                  <div class="modal-body modalText">
+                    <form role="form">
+                      <div class="form-group">
+                          <!-- first name -->
+                        <div class="form-group">
+                          <label for="usr">First Name:</label>
+                          <input type="text" class="form-control" id="usr" placeholder="First Name">
+                        </div>
+                          <!-- last name -->
+                        <div class="form-group">
+                          <label for="usr">Last Name:</label>
+                          <input type="text" class="form-control" id="usr" placeholder="Last Name">
+                        </div>
+                          <!-- Email -->
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Password">
+                      </div>
+                        <!-- password conformation -->
+                      <div class="form-group">
+                        <label for="pwd">Password-conformation:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Password Confirmation">
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- log in -->
+            <!-- Modal -->
+            <div class="modal fade" id="logIn" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Log In</h2>
+                  </div>
+                  <div class="modal-body modalText">
+                    <form class="form-inline" role="form">
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+      <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

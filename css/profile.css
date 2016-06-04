@@ -1,0 +1,71 @@
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: black;
+}
+
+/* making  navbar transparent */
+.navbar-default {
+    background-color: black;
+    border-color: #e7e7e7;
+}
+/* changing brand color to White */
+.navbar-default .navbar-brand {
+    color: yellow;
+}
+/* changing links to white */
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+}
+
+/* changing active color */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+
+/* drop down menu color */
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #FFF;
+    background-color: black;
+}
+/* edit profile  button*/
+.btn{
+  background: white;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* profile container */
+.profile{
+  background-color: black;
+  margin: 0 auto;
+}
+/* profile img */
+.profileImg{
+  margin: 0 auto;
+  width: 300px;
+  height: 25%;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+}
+
+/* profile info */
+.profileInfo{
+  text-align: center;
+  color: white;
+}
+.profileName{
+  color: yellow;
+  text-align: center;
+}
+
+
+
+.editButton{
+  text-align: center;
+  color: black;
+}
