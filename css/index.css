@@ -4,8 +4,7 @@ body {
   background: none;
 }
 
-body {
-  background-color: black;
+.full {
   background: url(https://pixabay.com/static/uploads/photo/2014/11/27/18/36/tent-548022_960_720.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
