@@ -1,17 +1,16 @@
+
 body {
   margin-top: 50px;
   margin-bottom: 50px;
   background: none;
 }
 
-body { 
-      background-image: url(https://pixabay.com/static/uploads/photo/2014/11/27/18/36/tent-548022_960_720.jpg) ;
-      background-position: center center;
-      background-repeat:  no-repeat;
-      background-attachment: fixed;
-      background-size:  cover;
-      background-color: #999;
-  
+.full {
+  background: url(https://pixabay.com/static/uploads/photo/2014/11/27/18/36/tent-548022_960_720.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 /* making  navbar transparent */
 .navbar-default {
