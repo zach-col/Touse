@@ -49,12 +49,16 @@ body {
   text-align: center;
   font-size: 50px;
   font-family: cursive, bold;
+  background: black; /* backup background color */
+  background: rgba(0, 0, 0, 0.5); /* ransparent background */
 }
 
 /* sign up log in */
 .mainInfo{
   color: white;
   text-align: center;
+  background: black; /* backup background color */
+  background: rgba(0, 0, 0, 0.5); /* ransparent background */
 }
 
 /* header */
